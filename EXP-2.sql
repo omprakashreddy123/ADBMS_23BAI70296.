@@ -18,7 +18,7 @@ insert into employee_TABLE VALUES
 
 select A.emp_name as EmployeeName, A.emp_dept as EmployeeDept, E.emp_name as 'Manager Name', E.emp_dept as ManagerDept
 		from employee_TABLE as A 
-  LEFT JOIN 
+  JOIN 
   employee_TABLE as E 
   on
   E.emp_id = A.manager_id;    
